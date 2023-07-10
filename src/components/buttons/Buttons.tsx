@@ -1,5 +1,4 @@
 
-
 import './buttons.css'
 
 export default function Buttons(props: any) {
@@ -40,13 +39,16 @@ export default function Buttons(props: any) {
                 multiply = true;
                 console.log(multiply)
                 break;
+            case 'AC':
+                setView('0')
+                break;
         }
     }
 
     return (
         <div id="button-wrapper">
             {buttons.map((obj: any) => (
-                <div key={obj.id} className='button' id={obj.id} onClick={() => {
+                <button key={obj.id} className='button' id={obj.id} onClick={() => {
                     if(view === '0') {
                         setView(obj.symb)
                     } else {
@@ -55,7 +57,7 @@ export default function Buttons(props: any) {
 
                     symbol(obj.symb)
                     
-                }} >{obj.symb}</div>
+                }} >{obj.symb}</button>
             ))}
         </div>
     )

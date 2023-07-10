@@ -19,11 +19,11 @@ function App() {
     {id: 'five', symb: '5'},
     {id: 'six', symb: '6'},
     {id: 'seven', symb: '7'},
-    {id: 'eigth', symb: '8'},
+    {id: 'eight', symb: '8'},
     {id: 'nine', symb: '9'},
     {id: 'add', symb: '+'},
-    {id: 'subtract', symbol: '-'},
-    {id: 'multiply', symbol: 'x'},
+    {id: 'subtract', symb: '-'},
+    {id: 'multiply', symb: 'x'},
     {id: 'divide', symb: '/'},
     {id: 'decimal', symb: '.'}
   ]

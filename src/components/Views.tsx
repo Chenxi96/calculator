@@ -9,7 +9,7 @@ export default function Views(props: any) {
             <div id="totalview">
                 {totalView}
             </div>
-            <div id="view">
+            <div id="display">
                 {view}
             </div>
         </>
