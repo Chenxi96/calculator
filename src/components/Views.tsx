@@ -1,14 +1,11 @@
 
 
 export default function Views(props: any) {
-    const {view, setView, totalView, setTotalView} = props
+    const {view} = props
 
     return (
         <>
         {console.log(view)}
-            <div id="totalview">
-                {totalView}
-            </div>
             <div id="display">
                 {view}
             </div>

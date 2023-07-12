@@ -5,8 +5,8 @@ import Buttons from './components/buttons/Buttons';
 
 
 function App() {
-  const [totalView, setTotalView] = useState()
   const [view, setView] = useState('0');
+  const [decimal, setDecimal] = useState('0')
 
   const buttons = [
     {id: 'clear', symb: 'AC'},
@@ -23,7 +23,7 @@ function App() {
     {id: 'nine', symb: '9'},
     {id: 'add', symb: '+'},
     {id: 'subtract', symb: '-'},
-    {id: 'multiply', symb: 'x'},
+    {id: 'multiply', symb: '*'},
     {id: 'divide', symb: '/'},
     {id: 'decimal', symb: '.'}
   ]
@@ -32,17 +32,14 @@ function App() {
     <div className='wrapper'>
       <Views 
       view={view} 
-      setView={setView} 
-      totalView={totalView} 
-      setTotalView={setTotalView}
+      setView={setView}
        />
       <Buttons
       view={view}
       buttons={buttons} 
       setView={setView} 
-      totalView={totalView} 
-      setTotalView={setTotalView}
-      
+      decimal={decimal}
+      setDecimal={setDecimal}
       />
     </div>
   )
