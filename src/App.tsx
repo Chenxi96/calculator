@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className='wrapper'>
+      <div className='calculator-container'>
       <Views 
       view={view} 
       setView={setView}
@@ -41,6 +42,10 @@ function App() {
       decimal={decimal}
       setDecimal={setDecimal}
       />
+      </div>
+      <p>
+        created by: Chenxi Lin
+      </p>
     </div>
   )
 }
