@@ -43,9 +43,6 @@ function App() {
       setDecimal={setDecimal}
       />
       </div>
-      <p>
-        created by: Chenxi Lin
-      </p>
     </div>
   )
 }
